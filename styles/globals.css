@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '../pages/pricing/price.css';
+@import '../pages/book/book.css';
+
+body {
+  -ms-overflow-style: none;
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-item {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 300px;
+  max-height: 150vh;
+}
+
+.nav-btn {
+  background: #d46c2c;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #c05818;
+  padding: 10px;
+  align-items: center;
+}
+
+.section1 {
+  height: 613px;
+}
+.section2 {
+  height: 65rem;
+}
+.pixel-font {
+  font-family: "VT323", monospace;
+}
+.videoStyle {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer {
+  margin-top: -6px;
+}
+
+.accordion {
+  /* max-width: 768px; */
+}
+.accordion-item {
+  list-style: none;
+}
+.accordion-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #ccc; */
+  padding: 1em;
+}
+.accordion-toggle:hover {
+  background-color: #d9a06650;
+}
+.accordion-toggle h3 {
+  margin: 0;
+}
+.accordion-content {
+  /* background-color: #d9a06650;
+  color: #d46c2c;
+  padding: 1em; */
+}
+
+img {
+  max-width: none !important;
+}

@@ -1,0 +1,7 @@
+1.  copy Our Work page
+2. Pricing page - Add squareshot calculator
+3. Book Page - multiple select(no need location), add describe. add refeerences. add next page.
+ 4. copy about page
+5. copy the contact.
+6. Follow the Credit Card, Add Paypal, Stripe gateway
+7. Simple admin panel

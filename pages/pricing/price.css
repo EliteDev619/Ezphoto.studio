@@ -1,0 +1,383 @@
+
+@font-face {
+  font-family: 'opensans';
+  src: url('../../styles/fonts/opensans.ttf') format("truetype"); 
+}
+
+@font-face {
+  font-family: 'opensansbold';
+  src: url('../../styles/fonts/bold.ttf') format("truetype"); 
+}
+
+.calculator {
+  padding: 3.125em;
+  font-family: 'opensansbold';
+}
+
+.gridCalc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 12px;
+  padding-top: 50px;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-group {
+  display: flex;
+  padding: 0px;
+  border: solid 1px #c3cbcd;
+  align-items: stretch;
+  margin-top: 20px;
+
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+}
+
+.plan-element {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+  cursor: pointer;
+}
+
+.plan-selected {
+  background-color: #dce4e4;
+}
+
+.paddingRight {
+  border-right: solid 1px #c3cbcd;
+}
+
+.imagetypes {
+  padding-top: 50px;
+}
+
+.accordion-item {
+  border-bottom: solid 1px #c3cbcd;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-title:hover {
+  background-color: #dce4e4;
+}
+
+.activeAccor {
+  background-color: #dce4e4;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-content {
+  background-color: #dce4e4;
+}
+
+.imagetypes-group {
+  margin-top: 20px;
+  border: solid 1px #c3cbcd;
+}
+
+.pay {
+  font-family: "opensans";
+}
+
+.checkImage {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.btnGroup {
+  padding-top: 30px;
+}
+
+.btnGroup > button:hover {
+  background-color: rgb(201, 195, 195);
+}
+
+.btnMinus {
+  border: solid 1px #000;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  width: 50px;
+}
+
+.btnPlus {
+  border: solid 1px #000;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  width: 50px;
+}
+
+.btnValue {
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  width: 120px;
+  font-size: 24px;
+}
+
+.plan-desc {
+  color: #807777;
+  font-family: 'opensans';
+}
+
+.image-detail {
+  position: absolute;
+  width: 300px;
+  height: 380px;
+  border: solid 2px #000;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 3;
+  margin-left: -320px;
+  margin-top: -50px;
+}
+
+.image-detail-title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.image-detail-desc {
+  font-size: 16px;
+  font-family: "opensans";
+  padding-top: 3px;
+}
+
+.image-detail-img {
+  margin-top: 10px;
+  border: solid 2px #000;
+  width: 260px;
+  height: 250px;
+  background-color: rgb(203, 237, 243);
+}
+
+.save-detail {
+  position: absolute;
+  width: 400px;
+  height: 230px;
+  border: solid 2px #000;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 3;
+  margin-left: 120px;
+  margin-top: -80px;
+}
+
+.save-detail-title {
+  font-size: 18px;
+  color: #000;
+}
+
+
+/* ///////////checkbox//////////// */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 2px #c3cbcd solid;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 4px;
+  width: 8px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+
+
+
+
+
+/* ////////////summary//////////// */
+.summary {
+  padding-left: 5em;
+}
+
+.summary-content {
+  border: solid 1px #c3cbcd;
+  margin-top: 20px;
+}
+
+.summary-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #c3cbcd;
+  padding: 20px;
+  color: #353535;
+  font-family: 'opensans';
+  line-height: 30px;
+}
+
+.summary-detail-val {
+  text-align: end;
+}
+
+.membership {
+  padding-top: 20px;
+}
+
+.summary-saving {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #353535;
+  font-family: 'opensans';
+  border-bottom: solid 1px #c3cbcd;
+}
+
+.summary-saving-info {
+  display: flex;
+}
+
+.saving-info {
+  margin-left: 10px;
+  color: #ababab;
+}
+
+.saving-info:hover {
+  color: #000;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.summary-btn {
+  padding-top: 50px;
+}
+
+.btnBook {
+  background-color: #000;
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnBook:hover {
+  color: #000;
+  background-color: #c3cbcd;
+  transition: all .2s ease-in-out;
+}
+
+
+.book-desc {
+  padding-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .plan-element {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gridCalc {
+    display: block;
+  }
+  .summary {
+    padding-left: 0em;
+    padding-top: 50px;
+  }
+  .plan-element {
+    padding: 20px;
+  }
+}
