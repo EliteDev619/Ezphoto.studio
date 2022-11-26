@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from 'next/link'
-import Login from '../Login'
+import Login from '../../components/Login';
 
 const Navbar = () => {
 

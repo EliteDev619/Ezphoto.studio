@@ -224,7 +224,7 @@ export default function PricePage() {
   const SavingDetail = () => {
     return (
       <div className="save-detail">
-        <p className="save-detail-title">Membership plan gives you a lower price per image. It's beneficial if you plan to order 50+ standard images throughout the year. “You save” is a difference between a full price per image and members only pricing including the cost of the membership itself.</p>
+        <p className="save-detail-title">Membership plan gives you a lower price per image. It&apos;s beneficial if you plan to order 50+ standard images throughout the year. “You save” is a difference between a full price per image and members only pricing including the cost of the membership itself.</p>
       </div>
     );
   };
@@ -284,7 +284,7 @@ export default function PricePage() {
             </div>
           </div>
           <div className="summary-btn">
-            <button className="btnBook"><Link href="/book"><p className="book-desc">BOOK A SHOOT</p></Link> <AiOutlineArrowRight /></button> 
+            <button className="btnBook"><Link href="/book" passHref><p className="book-desc">BOOK A SHOOT</p></Link> <AiOutlineArrowRight /></button> 
           </div>
         </div>
       </div>

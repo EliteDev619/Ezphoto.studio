@@ -324,9 +324,9 @@ export default function BookPage() {
     return (
       <form className="w-full">
         <BookBackBtn></BookBackBtn>
-        <p className="text-2xl font-extrabold py-3 m-0">WE'RE ALMOST DONE...</p>
+        <p className="text-2xl font-extrabold py-3 m-0">WE&apos;RE ALMOST DONE...</p>
         <div className="flex">
-          <p className="text-xl font-extrabold pt-2.5 pb-2.5">WHICH CITY YOU'RE IN?</p>
+          <p className="text-xl font-extrabold pt-2.5 pb-2.5">WHICH CITY YOU&apos;RE IN?</p>
           <p className="w-4 h-4 rounded-full flex relative justify-center ml-1 mt-5 bg-slate-200 cursor-pointer">*</p>
         </div>
         <div className="mb-4">

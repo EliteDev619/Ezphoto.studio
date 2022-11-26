@@ -18,12 +18,12 @@ const Footer = () => {
           </div>
           <div className="flex justify-start cw:border-none border-l cw:pl-0 pl-10 border-black">
             <div className="pt-5 flex justify-start">
-              <Link href=""><div className="border border-black w-10 h-10 flex justify-center items-center hover:bg-slate-200 cursor-pointer"><AiFillYoutube size={24} /></div></Link>
-              <Link href=""><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineInstagram size={24} /></div></Link>
-              <Link href=""><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineLinkedin size={24} /></div></Link>
-              <Link href=""><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineTwitter size={24} /></div></Link>
-              <Link href=""><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiFillFacebook size={24} /></div></Link>
-              <Link href=""><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineOneToOne size={24} /></div></Link>
+              <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center hover:bg-slate-200 cursor-pointer"><AiFillYoutube size={24} /></div></Link>
+              <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineInstagram size={24} /></div></Link>
+              <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineLinkedin size={24} /></div></Link>
+              <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineTwitter size={24} /></div></Link>
+              <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiFillFacebook size={24} /></div></Link>
+              <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineOneToOne size={24} /></div></Link>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div className="pt-8 flex cw:block justify-start pr-5">
               <input className="pl-4 text-xs cw:h-14 cw:text-lg border border-slate-400 w-full focus:outline-0" placeholder="Enter your email" />
-              <Link href=""><div className="bg-black font-bold cw:mt-4 cw:text-center cw:text-xl p-2.5 px-3 text-xs text-white cursor-default hover:bg-slate-300 hover:text-black">
+              <Link href="" passHref><div className="bg-black font-bold cw:mt-4 cw:text-center cw:text-xl p-2.5 px-3 text-xs text-white cursor-default hover:bg-slate-300 hover:text-black">
                 <p className="">SUBSCRIBE</p></div></Link>
             </div>
           </div>
