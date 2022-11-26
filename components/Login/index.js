@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from 'next/link'
 
 const Login = ({ setUsername }) => {
   const [showModal, setShowModal] = useState(false);
@@ -21,16 +22,16 @@ const Login = ({ setUsername }) => {
     <>
       {
         (tmpUsername == 'admin' && tmpSubmitFlag ?
-          <button
-            className="border-b-4 border-l-2 text-black active:bg-gray-500 
+          <Link href="/" passHref><button
+            className="bg-transparent border-b-4 border-l-2 text-black active:bg-gray-500 
       font-bold fixed top-36 z-10 right-0 px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
             type="button"
             onClick={() => handleLogout()}
           >
             Logout
-          </button> :
+          </button></Link> :
           <button
-            className="border-b-4 border-l-2 text-black active:bg-gray-500 
+            className="bg-transparent border-b-4 border-l-2 text-black active:bg-gray-500 
       font-bold fixed top-36 z-10 right-0 px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
             type="button"
             onClick={() => setShowModal(true)}

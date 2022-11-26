@@ -26,7 +26,7 @@ const Navbar = () => {
       url: '/pricing'
     },
     {
-      title: 'about',
+      title: 'About',
       url: '/about'
     },
     {
