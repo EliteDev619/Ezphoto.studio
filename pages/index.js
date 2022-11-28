@@ -220,14 +220,14 @@ export default function Home() {
       <Head>
         <title>BOTB.ONE</title>
       </Head>
-      <div className="h-96 flex justify-center relative bg-gray-300">
+      <div className="h-[400px] flex justify-center relative bg-gray-300">
         <Image src={Section1BG} className="block w-screen" objectFit='cover' objectPosition='center' alt="Meta Legends" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-medium">
+        <div className="absolute top-1/2 left-1/2 transform whitespace-nowrap -translate-x-1/2 -translate-y-1/2 text-5xl font-medium">
           PRODUCT PHOTOGRAPHY PROFESSIONALS
         </div>
       </div>
       <div className="h-full px-16 grid x-full">
-        <Gallery images={images} backdropClosesModal={true} enableLightbox={true} rowHeight={350} />
+        <Gallery images={images} backdropClosesModal={true} enableLightbox={true} rowHeight={350} margin={10} />
       </div>
       <ToastContainer
         position="top-right"

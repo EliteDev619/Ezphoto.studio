@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white">
-      <div className=" mx-auto px-12 cw:px-6 py-6">
+      <div className=" mx-auto px-12 cw:px-6 py-10">
         <div className='h-18 flex justify-between'>
           <div><a className="text-black text-4xl font-black" alt="Hactivist">ezphoto.studio</a></div>
           <div>
