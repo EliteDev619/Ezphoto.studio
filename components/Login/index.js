@@ -31,7 +31,7 @@ const Login = ({ setUsername }) => {
             Logout
           </button></Link> :
           <button
-            className="bg-[#f3e8e8a8] border-b-4 border-l-2 text-black active:bg-gray-500 
+            className="bg-[#ffffff70] border-b-4 border-l-2 text-black active:bg-gray-500 
       font-bold fixed top-36 z-10 right-0 px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
             type="button"
             onClick={() => setShowModal(true)}

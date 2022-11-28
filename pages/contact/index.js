@@ -37,11 +37,11 @@ export default function Contact() {
     <div>
       <div className="h-[35rem] flex justify-center relative bg-gray-300">
         <Image src={ContactBG} className="block w-screen" objectFit='cover' objectPosition='center' alt="Meta Legends" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-medium text-center">
-          <div className="text-5xl">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-medium text-center cw:text-4xl sm:text-2xl">
+          <div>
             Contact US
           </div>
-          <div className="text-white text-6xl">
+          <div className="text-white">
             Ryan@ezphoto.studio
           </div>
         </div>

@@ -84,7 +84,7 @@ const Navbar = () => {
       <Login setUsername={setUsername} />
 
       {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-      <div className={`${toggle ? 'sm:hidden' : 'hidden sm:hidden'}`} id="mobile-menu">
+      <div className={`${toggle ? '' : 'hidden'}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 text-center">
           {linkList.map(({ title, url }, index) => (
             <SetLinkList title={title} index={index} url={url} isMobile={true} key={index} />

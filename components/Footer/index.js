@@ -11,12 +11,12 @@ const Footer = () => {
   return (
     <div className="pt-0">
       <div className="mx-auto border-t mt-5 border-black">
-        <div className="grid grid-cols-2 cw:grid-cols-1 px-20">
+        <div className="grid grid-cols-2 cw:grid-cols-1 px-20 sm:px-5">
           <div className="pr-20 pt-7 cw:text-xl flex justify-between text-sm">
             <a className="">855-577-1375</a>
             <a className="">hello@squareshot.com</a>
           </div>
-          <div className="flex justify-start cw:border-none border-l cw:pl-0 pl-10 border-black">
+          <div className="flex justify-start cw:border-none border-l cw:pl-0 pl-10 border-black sm:hidden">
             <div className="pt-5 flex justify-start">
               <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center hover:bg-slate-200 cursor-pointer"><AiFillYoutube size={24} /></div></Link>
               <Link href="" passHref><div className="border border-black w-10 h-10 flex justify-center items-center ml-8 hover:bg-slate-200 cursor-pointer"><AiOutlineInstagram size={24} /></div></Link>
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 cw:grid-cols-1 px-20">
+        <div className="grid grid-cols-2 cw:grid-cols-1 px-20 sm:px-5">
           <div className="justify-center">
             <div className="pt-10">
               <p className="font-bold text-xl">SUBSCRIBE TO OUR EMAILS</p>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 cw:grid-cols-1 px-20">
+        <div className="grid grid-cols-2 cw:grid-cols-1 px-20 sm:px-5">
           <div className="justify-center pt-12">
             <div className="flex justify-start">
               <div>
@@ -134,7 +134,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 cw:grid-cols-1 px-20">
+        <div className="grid grid-cols-2 cw:grid-cols-1 px-20 sm:px-5">
           <div className="justify-center cw:text-lg py-7 text-sm text-slate-400 pt-8">© 2022 Sadvent Inc. All Rights Reserved.
           </div>
           <div className="justify-center cw:border-none text-center cw:text-start cw:text-lg p-7 text-sm text-slate-400 border-l border-black">

@@ -231,14 +231,14 @@ export default function PricePage() {
 
   return (
     <div className="calculator">
-      <div className="text-6xl font-bold">CALCULATOR</div>
+      <div className="text-6xl font-bold sm:text-4xl">CALCULATOR</div>
       <div className="gridCalc">
         <div>
           <div className="plan">
             <div className="flex-space">
               <p className="text-2xl font-bold">SELECT A PLAN</p>
               <div className="flex-space">
-                <p className="pay" style={{ paddingRight: 10 }}>Pay yearly (Save 20%)</p>
+                <p className="pay pl-[10px] pr-[10px]">Pay yearly (Save 20%)</p>
                 <Switch onChange={payHandler} checked={bPayHandle} checkedIcon={false} uncheckedIcon={false} onColor="#000" activeBoxShadow="#fff" />
               </div>
             </div>

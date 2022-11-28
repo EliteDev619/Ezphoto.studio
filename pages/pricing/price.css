@@ -1,12 +1,11 @@
-
 @font-face {
   font-family: 'opensans';
-  src: url('../../styles/fonts/opensans.ttf') format("truetype"); 
+  src: url('../../styles/fonts/opensans.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'opensansbold';
-  src: url('../../styles/fonts/bold.ttf') format("truetype"); 
+  src: url('../../styles/fonts/bold.ttf') format("truetype");
 }
 
 .calculator {
@@ -24,6 +23,7 @@
 .flex-space {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .plan-group {
@@ -118,7 +118,7 @@
   padding-top: 30px;
 }
 
-.btnGroup > button:hover {
+.btnGroup>button:hover {
   background-color: rgb(201, 195, 195);
 }
 
@@ -239,12 +239,12 @@
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #000;
 }
 
@@ -256,7 +256,7 @@
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -373,11 +373,25 @@
   .gridCalc {
     display: block;
   }
+
   .summary {
     padding-left: 0em;
     padding-top: 50px;
   }
+
   .plan-element {
     padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .calculator {
+    padding: 1rem;
+  }
+  .plan-group {
+    display: block;
+  }
+  .plan-element {
+    padding: 10px;
   }
 }

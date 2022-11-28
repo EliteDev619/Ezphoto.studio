@@ -173,12 +173,6 @@ export default function BookPage() {
     setBookProgress(++bookProgress);
   }
 
-  // useEffect(() => {
-  //   console.log(document.getElementById("projectDesc"));
-  //   document.getElementById("projectDesc").value = projectDesc
-  // }, [projectDesc])
-
-
   const FirstStep = () => {
     return (
       <form className="w-full">
