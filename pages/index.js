@@ -22,15 +22,15 @@ export default function Home() {
       {
         src: "https://images.squarespace-cdn.com/content/v1/61e85bacb041a27ebc0d25d3/8f32ab8b-37ab-495a-9fac-d2320c1ad29b/Hawx-s1.jpg?format=500w",
         thumbnail: "https://images.squarespace-cdn.com/content/v1/61e85bacb041a27ebc0d25d3/8f32ab8b-37ab-495a-9fac-d2320c1ad29b/Hawx-s1.jpg?format=500w",
-        thumbnailWidth: 390,
-        thumbnailHeight: 450,
+        thumbnailWidth: 600,
+        thumbnailHeight: 600,
         caption: "After Rain (Jeshu John - designerspics.com)"
       },
       {
         src: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg",
         thumbnail: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_n.jpg",
-        thumbnailWidth: 390,
-        thumbnailHeight: 450,
+        thumbnailWidth: 600,
+        thumbnailHeight: 600,
         caption: "37H (gratispgraphy.com)"
       },
       {
@@ -227,7 +227,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-full px-16 grid x-full">
-        <Gallery images={images} backdropClosesModal={true} enableLightbox={true} />
+        <Gallery images={images} backdropClosesModal={true} enableLightbox={true} rowHeight={350} />
       </div>
       <ToastContainer
         position="top-right"
